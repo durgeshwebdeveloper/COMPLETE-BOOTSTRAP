@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LAYOUT</title>
+  <!-- ✅ Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- ✅ Bootstrap 5 JS + Popper CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<!--Here are 10 program questions beased on Bootstrap's container classes,grid system,and 
+utility classes for layout, along wiht solutions and wxpected ouputs.-->
+<!--1.Creating a Container-->
+<!--Create a simple HTML page using Bootstrap that includes a container with a heading and paragraph inside it.-->
+<div class="container">
+    <h1>Welcome to Bootstrap</h1>
+    <p>This is a simple container example using Bootstrap.</p><br><br>
+<!--Output: A centered container with a heading and a paragraph.-->
+
+<!--2.Using a Fluid Container-->
+<!--Create an HTML page with a fluid container that adapts to the width of the viewport.-->
+<div class="container-fluid">
+    <h1>Welcome to Bootstrap</h1>
+    <p>This is a fluid container example using Bootstrap.</p>
+</div><br><br>
+<!--Output:A full-width container that fills the entire width of the viewport.-->
+
+<!--3.Basic Grid Layout-->
+<!--Create a grid layout with 3 columns in a row using Bootstrap's grid system.-->
+<div class="container1">
+    <div class="row">
+    <div class="col">Column 1</div>
+    <div class="col">Column 2</div>
+    <div class="col">Column 3</div>
+</div>
+</div><br><br>
+<!--Output: A row with three equally sized columns labeled "Column 1", "Column 2", and "Column 3."-->
+
+<!--4.Responsive Grid Layouts-->
+<!--Create a responsive grid layout that shows 2 columns on medium devices and 4 columns on large devices.-->
+<div class="container2">
+    <div class="row">
+        <div class="col-md-6 col-lg-3">Column 1</div>
+        <div class="col-md-6 col-lg-3">Column 2</div>
+        <div class="col-md-6 col-lg-3">Column 3</div>
+        <div class="col-md-6 col-lg-3">Column 4</div>
+    </div>
+</div><br><br>
+<!--Output: Two columnson mediumdevices (MD) and four columns on large devices (LG).-->
+
+<!--5.Offsetting Columns-->
+<!--Create a grid layout where the first columns is offset by 2 columns.-->
+<div class="container3">
+    <div class="row">
+        <div class="col-md-2 offset-md-2">Offset Column</div>
+        <div class="col-md-8">Normal Column</div>
+    </div>
+</div><br><br>
+<!--Ouput:The first column is pushed two columns to the right, creaating an offset. -->
+
+<!--6.Nested Grid Layout-->
+<!--Create a nested grid layout where one column contains a 2-columns grid.-->
+<div class="container4">
+    <div class="row">
+        <div class="col-md-8">
+            <h3>Main Column</h3>
+            <div class="row">
+                <div class="col">Nested Column 1</div>
+                <div class="col">Nested Column 2</div>
+            </div>
+        </div>
+        <div class="col-md-4">Sidebar</div>
+    </div>
+</div><br><br>
+<!--Output:A main columns with twonested columns next to a sidebar.-->
+
+<!--7.Using Bootstrap Utilities for Margin-->
+<!--Create an HTML document with three boxes that have different margin sizes uisng Bootstrp utility classes.-->
+<div class="container5">
+    <div class="bg-primary text-white p-3 mb-3">Box with Margin Bottom 3</div>
+    <div class="bg-success text-white p-3 mb-4">Box with Margin Bottom 4</div>
+    <div class="bg-danger text-white p-3 mb-5">Box with Margin Bottom 5</div>
+</div><br><br>
+<!--Output: Three colored boxes with vaying bottom margins.-->
+
+<!--8.Using Bootstrap Utilities-->
+<!--Create an HTML page with boxes demonstrating different padding sizes using Bootstrp utility classes.-->
+<div class="container6">
+    <div class="bg-primary text-white p-1">Box with Padding 1</div>
+    <div class="bg-success text-white p-2">Box with Padding 2</div>
+    <div class="bg-danger text-white p-3">Box with Padding 3</div>
+</div><br><br>
+<!--Output: Three colored boxes with varying padding sizes.-->
+
+<!--9.Responsive Utilities-->
+<!--Create a Bootstrap layout that hides a specific element on small screens and shows it on medium screens and up.-->
+<div class="container7">
+    <h1>Main Content</h1>
+    <div class="d-none d-md-block">
+        <p>This content is hidden on small screens.</p>
+    </div>
+</div><br><br>
+<!--Output: The text "This content is hidden on small screens." is visible only on medium and larger screens.-->
+</body>
+</html>
